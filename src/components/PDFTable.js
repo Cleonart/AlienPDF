@@ -1,4 +1,4 @@
-import tool from "./PDFTooling";
+import tool from "./PDFTooling.js";
 
 /**
  * * 1 Character in PDFKit is count as 5 in width and height

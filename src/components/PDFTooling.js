@@ -16,6 +16,16 @@ export default {
   },
 
   /**
+   ** endAndRead
+   ** Function to end and read the PDF Instance
+   * @param doc : PDFKit Instance
+   */
+  endAndRead: function (doc) {
+    doc.end();
+    return doc.read();
+  },
+
+  /**
    ** switchToPage
    ** Function to switch page using custom functions
    * @param doc : PDFKit Instance

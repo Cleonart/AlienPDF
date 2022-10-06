@@ -1,14 +1,28 @@
 // * Import necessary components
+import pdfcore from "pdfkit";
 import PDFLeftHeader from "./src/components/PDFLeftHeader.js";
 import PDFCenterHeading from "./src/components/PDFCenterHeading.js";
 import PDFTooling from "./src/components/PDFTooling.js";
 import PDFTable from "./src/components/PDFTable.js";
 
 const PDFKit = {
+  doc: undefined,
+
   ...PDFLeftHeader,
   ...PDFCenterHeading,
   ...PDFTooling,
   ...PDFTable,
+
+  /**
+   * * create
+   * * Function to create new PDFKit instance
+   * @param {*} options
+   * @returns {Instance(pdfkit)}
+   */
+  create: function (options) {
+    this.doc = new pdfcore(options);
+    return this.doc;
+  },
 
   PDFSuratTugasRightHeader: function (doc, options, data) {
     let width = 250;

@@ -1,5 +1,6 @@
 {
   "name": "alienpdf_test",
+  "type": "module",
   "version": "0.1.0",
   "description": "Testing the framework",
   "main": "index.js",
@@ -23,5 +24,8 @@
   "homepage": "https://github.com/Cleonart/AlienPDF#readme",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14"
   }
 }

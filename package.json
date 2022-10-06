@@ -1,0 +1,28 @@
+{
+  "name": "alienpdf",
+  "version": "0.1.0",
+  "description": "Extenstion of PDFKit to create painless yet easy PDF Designs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cleonart/AlienPDF.git"
+  },
+  "keywords": [
+    "npm",
+    "pdfkit",
+    "pdf"
+  ],
+  "author": "zredhard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cleonart/AlienPDF/issues"
+  },
+  "homepage": "https://github.com/Cleonart/AlienPDF#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pdfkit": "^0.13.0"
+  }
+}

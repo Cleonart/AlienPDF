@@ -1,13 +1,18 @@
 // * Import necessary components
 import pdfcore from "pdfkit";
+import Heading from "./src/components/Heading.js";
 import PDFLeftHeader from "./src/components/PDFLeftHeader.js";
 import PDFCenterHeading from "./src/components/PDFCenterHeading.js";
 import PDFTooling from "./src/components/PDFTooling.js";
 import PDFTable from "./src/components/PDFTable.js";
 
+//* Import Templates
+import Templates from "./src/templates/index.js";
+
 const PDFKit = {
   doc: undefined,
-
+  templates: Templates,
+  ...Heading,
   ...PDFLeftHeader,
   ...PDFCenterHeading,
   ...PDFTooling,
@@ -21,6 +26,7 @@ const PDFKit = {
    */
   create: function (options) {
     this.doc = new pdfcore(options);
+    this.doc.current_page = 0;
     return this.doc;
   },
 

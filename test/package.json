@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Cleonart/AlienPDF#readme",
   "dependencies": {
-    "alienpdf": "^0.1.3",
+    "alienpdf": "^0.1.4",
     "express": "^4.18.1",
     "pdfkit": "^0.13.0"
   },

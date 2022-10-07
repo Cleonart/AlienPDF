@@ -413,7 +413,7 @@ export default {
 
     //* Register data row on table
     doc.x = marginLeft;
-    doc.opt.margins.bottom = doc.page.height - doc.breakpoint;
+    doc.options.margins.bottom = doc.page.height - doc.breakpoint;
     const dataRows = [];
     let maxTableRowHeight = 0;
 

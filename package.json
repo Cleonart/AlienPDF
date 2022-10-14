@@ -1,6 +1,6 @@
 {
   "name": "alienpdf",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Extenstion of PDFKit to create painless yet easy PDF Designs",
   "main": "index.js",

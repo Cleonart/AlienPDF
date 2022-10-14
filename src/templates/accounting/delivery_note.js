@@ -58,6 +58,30 @@ export default {
     },
   ],
 
+  tableData: [
+    {
+      no: 1,
+      product_code: "KD110",
+      product_name: "Nama Barang 1",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 2,
+      product_code: "KD111",
+      product_name: "Nama Barang 2",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 3,
+      product_code: "KD112",
+      product_name: "Nama Barang 3",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+  ],
+
   register: function (AlienPDF) {
     //* Create Doc Instance from AlienPDF
     const doc = AlienPDF.create({
@@ -178,15 +202,12 @@ export default {
       rowSpaceY: 25,
     };
 
-    AlienPDF.PDFTableKit(doc, PDFTableOptions, this.tableHeader, [
-      {
-        no: "tes",
-        product_code: "tes",
-        product_name: "tes",
-        quantity: "tes",
-        description: "tes",
-      },
-    ]);
+    AlienPDF.PDFTableKit(
+      doc,
+      PDFTableOptions,
+      this.tableHeader,
+      this.tableData || []
+    );
 
     //* Return the doc
     return doc;

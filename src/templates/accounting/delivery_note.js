@@ -179,7 +179,8 @@ export default {
         left: 70,
       },
     });
-    doc.breakpoint = 800;
+    doc.breakpoint = 750;
+    doc.current_page = 0;
 
     this.heading(doc, AlienPDF);
     this.headingClient(doc, AlienPDF);

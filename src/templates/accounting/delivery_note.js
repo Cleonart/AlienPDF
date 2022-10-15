@@ -80,6 +80,90 @@ export default {
       quantity: 10,
       description: "Tidak ada",
     },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 4,
+      product_code: "KD113",
+      product_name: "Nama Barang 4",
+      quantity: 10,
+      description: "Tidak ada",
+    },
+    {
+      no: 5,
+      product_code: "KD114",
+      product_name: "Nama Barang 5",
+      quantity: 10,
+      description: "Tidak ada",
+    },
   ],
 
   register: function (AlienPDF) {
@@ -95,7 +179,7 @@ export default {
         left: 70,
       },
     });
-    doc.breakpoint = 450;
+    doc.breakpoint = 800;
 
     this.heading(doc, AlienPDF);
     this.headingClient(doc, AlienPDF);

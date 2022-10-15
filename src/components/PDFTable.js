@@ -181,8 +181,8 @@ export default {
    */
   calcOverflowY: function (doc, options, dataRows = []) {
     const output = [];
-    const breakpoint = doc.page.height - doc.opt.margins.bottom;
-    let posY = options.y || doc.opt.margins.top;
+    const breakpoint = doc.page.height - doc.options.margins.bottom;
+    let posY = options.y || doc.options.margins.top;
     let page = options.current_page || 0;
     dataRows.forEach((record) => {
       let code = record.code;
@@ -220,7 +220,7 @@ export default {
               height: height,
             });
           }
-          posY = doc.opt.margins.top;
+          posY = doc.options.margins.top;
           page += 1;
           remainingY -= breakpoint;
         }
@@ -397,7 +397,7 @@ export default {
     doc.x = marginLeft;
     const dataRows = [];
     let maxTableRowHeight = 0;
-    doc.opt.margins.bottom = doc.page.height - doc.breakpoint;
+    doc.options.margins.bottom = doc.page.height - doc.breakpoint;
   },
 
   PDFTableKit: function (doc, options, header, data) {
@@ -537,12 +537,12 @@ export default {
           if (tempPageNow == tempPageBefore) {
             doc.switchToPage(tempPageNow);
             beforeTextPos = beforeYPos;
-            afterTextPos = doc.page.height - doc.opt.margins.bottom;
+            afterTextPos = doc.page.height - doc.options.margins.bottom;
           }
 
           //* Propagate back from newest page
           else {
-            beforeTextPos = doc.opt.margins.top;
+            beforeTextPos = doc.options.margins.top;
           }
 
           //* Draw the rectangle
